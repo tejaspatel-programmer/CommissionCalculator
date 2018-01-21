@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file contains the different achievement ranges and respective base and rate values.
+Achievement = The percentage of the target the sales person been able to sell; this is calculated with the formula achievement = actual/target
+ -->
+<ranges>
+    <range>
+        <minValue>0</minValue>
+        <maxValue>0.8</maxValue>
+        <base>0</base>
+        <rate>0</rate>
+    </range>
+    <range>
+        <minValue>0.8</minValue>
+        <maxValue>1</maxValue>
+        <base>0.8</base>
+        <rate>1</rate>
+    </range>
+    <range>
+        <minValue>1</minValue>
+        <maxValue>2</maxValue>
+        <base>1</base>
+        <rate>1.5</rate>
+    </range>
+    <range>
+        <minValue>2</minValue>
+        <maxValue>3</maxValue>
+        <base>2.5</base>
+        <rate>0.5</rate>
+    </range>
+    <range>
+        <minValue>3</minValue>
+        <maxValue>99.99</maxValue>
+        <base>3.0</base>
+        <rate>0</rate>
+    </range>
+</ranges>

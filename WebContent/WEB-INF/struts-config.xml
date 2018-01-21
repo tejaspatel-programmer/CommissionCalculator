@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+    <form-beans>
+        <form-bean name="commissionFormBean" type="com.performio.commission.formBean.CommissionFormBean"/>
+    </form-beans>
+     <global-forwards>
+        <forward name="welcome"  path="/CommissionCalculator.do"/>
+    </global-forwards>
+    <action-mappings>
+        <action input="/commisionCalc.jsp" name="commissionFormBean" path="/commission" scope="session" type="com.performio.commission.action.CommissionAction">
+            <forward name="success" path="/commisionCalc.jsp" />
+            <forward name="failure" path="/failure.jsp" />
+        </action>
+        <action path="/CommissionCalculator" forward="/commisionCalc.jsp"/>
+    </action-mappings>
+    <message-resources parameter="com/performio/commission/resources/ApplicationResource"/>
+</struts-config>
